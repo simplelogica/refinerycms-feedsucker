@@ -1,0 +1,426 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://feeds.rssboard.org/rssboard
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/xml; charset=UTF-8
+      Etag:
+      - +n3tiByt7ciDl8uMqHEh6Bmgx9c
+      Last-Modified:
+      - Tue, 13 Nov 2012 17:41:04 GMT
+      Date:
+      - Tue, 13 Nov 2012 17:47:16 GMT
+      Expires:
+      - Tue, 13 Nov 2012 17:47:16 GMT
+      Cache-Control:
+      - private, max-age=0
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<?xml-stylesheet type=\"text/xsl\"
+        media=\"screen\" href=\"/~d/styles/rss2full.xsl\"?><?xml-stylesheet type=\"text/css\"
+        media=\"screen\" href=\"http://feeds.rssboard.org/~d/styles/itemcontent.css\"?><rss
+        xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\"
+        xmlns:wordzilla=\"http://www.cadenhead.org/workbench/wordzilla/namespace\"
+        xmlns:feedburner=\"http://rssnamespace.org/feedburner/ext/1.0\" version=\"2.0\">\r\n
+        \ <channel>\r\n    <title>RSS Advisory Board</title>\r\n    <link>http://www.rssboard.org/</link>\r\n
+        \   <description>RSS Advisory Board announcements and Really Simple Syndication
+        news</description>\r\n    <language>en-us</language>\r\n    <docs>http://www.rssboard.org/rss-specification</docs>\r\n
+        \   <generator>Wordzilla/0.58</generator>\r\n    <ttl>10</ttl>\r\n    \r\n
+        \   <feedburner:info uri=\"rssboard\" /><atom10:link xmlns:atom10=\"http://www.w3.org/2005/Atom\"
+        rel=\"hub\" href=\"http://pubsubhubbub.appspot.com/\" /><atom10:link xmlns:atom10=\"http://www.w3.org/2005/Atom\"
+        rel=\"self\" type=\"application/rss+xml\" href=\"http://feeds.rssboard.org/rssboard\"
+        /><feedburner:feedFlare href=\"http://add.my.yahoo.com/rss?url=http%3A%2F%2Ffeeds.rssboard.org%2Frssboard\"
+        src=\"http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif\">Subscribe
+        with My Yahoo!</feedburner:feedFlare><feedburner:feedFlare href=\"http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http%3A%2F%2Ffeeds.rssboard.org%2Frssboard\"
+        src=\"http://www.newsgator.com/images/ngsub1.gif\">Subscribe with NewsGator</feedburner:feedFlare><feedburner:feedFlare
+        href=\"http://feeds.my.aol.com/add.jsp?url=http%3A%2F%2Ffeeds.rssboard.org%2Frssboard\"
+        src=\"http://o.aolcdn.com/favorites.my.aol.com/webmaster/ffclient/webroot/locale/en-US/images/myAOLButtonSmall.gif\">Subscribe
+        with My AOL</feedburner:feedFlare><feedburner:feedFlare href=\"http://www.bloglines.com/sub/http://feeds.rssboard.org/rssboard\"
+        src=\"http://www.bloglines.com/images/sub_modern11.gif\">Subscribe with Bloglines</feedburner:feedFlare><feedburner:feedFlare
+        href=\"http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Ffeeds.rssboard.org%2Frssboard\"
+        src=\"http://www.netvibes.com/img/add2netvibes.gif\">Subscribe with Netvibes</feedburner:feedFlare><feedburner:feedFlare
+        href=\"http://fusion.google.com/add?feedurl=http%3A%2F%2Ffeeds.rssboard.org%2Frssboard\"
+        src=\"http://buttons.googlesyndication.com/fusion/add.gif\">Subscribe with
+        Google</feedburner:feedFlare><feedburner:feedFlare href=\"http://www.pageflakes.com/subscribe.aspx?url=http%3A%2F%2Ffeeds.rssboard.org%2Frssboard\"
+        src=\"http://www.pageflakes.com/ImageFile.ashx?instanceId=Static_4&amp;fileName=ATP_blu_91x17.gif\">Subscribe
+        with Pageflakes</feedburner:feedFlare><item>\r\n      <title>RSS Board Moves
+        to New Server</title>\r\n      <link>http://feeds.rssboard.org/~r/rssboard/~3/xmaqxcbLRUg/rss-board-moves-new-server</link>\r\n
+        \     <description>&lt;p&gt;The &lt;a href=\"http://www.rssboard.org/\"&gt;RSS
+        Advisory Board&lt;/a&gt; has moved its web site to a new server. If you have
+        any problems using the site, please note them in the comments. Thanks.&lt;/p&gt;&lt;img
+        src=\"http://feeds.feedburner.com/~r/rssboard/~4/xmaqxcbLRUg\" height=\"1\"
+        width=\"1\"/&gt;</description>\r\n      <pubDate>Thu, 28 Oct 2010 17:49:05
+        -0400</pubDate>\r\n      <dc:creator>Rogers Cadenhead</dc:creator>\r\n      <comments>http://www.rssboard.org/news/204/rss-board-moves-new-server#discuss</comments>\r\n
+        \     <guid isPermaLink=\"false\">tag:rssboard.org,2006:weblog.204</guid>\r\n
+        \     <category>announcements,</category>\r\n      <wordzilla:id>204</wordzilla:id>\r\n
+        \   <feedburner:origLink>http://www.rssboard.org/news/204/rss-board-moves-new-server</feedburner:origLink></item>\r\n
+        \   <item>\r\n      <title>Media RSS Moves to the RSS Advisory Board</title>\r\n
+        \     <link>http://feeds.rssboard.org/~r/rssboard/~3/BOKfu2QmAyE/media-rss-moves-rss-advisory-board</link>\r\n
+        \     <description>&lt;p&gt;The proposal for the RSS Advisory Board to become
+        the publisher of the Media RSS namespace has passed 8-0 with members Rogers
+        Cadenhead, Sterling \"Chip\" Camden, Simone Carletti, James Holderness, Jenny
+        Levine, Randy Charles Morin, Ryan Parman and Jake Savin voting in favor.&lt;/p&gt;&lt;p&gt;The
+        specification's permanent URL will be &lt;a href=\"http://www.rssboard.org/media-rss\"&gt;http://www.rssboard.org/media-rss&lt;/a&gt;
+        once we have finished proofreading the document. The namespace declaration
+        will remain &lt;a href=\"http://search.yahoo.com/mrss/\"&gt;http://search.yahoo.com/mrss/&lt;/a&gt;
+        for as long as it is published to ensure that software using the namespace
+        will continue to function properly.&lt;/p&gt;&lt;p&gt;The board also will
+        be taking over management of the &lt;a href=\"http://tech.groups.yahoo.com/group/rss-media/\"&gt;RSS-Media&lt;/a&gt;
+        mailing list, where implementers of the namespace can get help and contribute
+        feedback.&lt;/p&gt;&lt;img src=\"http://feeds.feedburner.com/~r/rssboard/~4/BOKfu2QmAyE\"
+        height=\"1\" width=\"1\"/&gt;</description>\r\n      <pubDate>Fri, 11 Dec
+        2009 21:29:08 -0500</pubDate>\r\n      <dc:creator>Rogers Cadenhead</dc:creator>\r\n
+        \     <comments>http://www.rssboard.org/news/203/media-rss-moves-rss-advisory-board#discuss</comments>\r\n
+        \     <guid isPermaLink=\"false\">tag:rssboard.org,2006:weblog.203</guid>\r\n
+        \     <category>announcements,</category>\r\n      <wordzilla:id>203</wordzilla:id>\r\n
+        \   <feedburner:origLink>http://www.rssboard.org/news/203/media-rss-moves-rss-advisory-board</feedburner:origLink></item>\r\n
+        \   <item>\r\n      <title>Proposal: Take Over Publication of Media-RSS</title>\r\n
+        \     <link>http://feeds.rssboard.org/~r/rssboard/~3/HJP7tGqF-PE/proposal-take-over-publication-media-rss</link>\r\n
+        \     <description>&lt;p&gt;The following RSS Advisory Board proposal has
+        been made by Rogers Cadenhead and seconded by Ryan Parman.&lt;/p&gt;&lt;p&gt;Under
+        the advisory board charter, the board has seven days to discuss the proposal
+        followed by seven days to vote on it. Interested parties can comment on the
+        proposal on the mailing list &lt;a href=\"http://groups.yahoo.com/group/rss-public\"&gt;RSS-Public&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;a
+        href=\"http://video.search.yahoo.com/mrss\"&gt;Media RSS&lt;/a&gt; is a namespace
+        for syndicating audio, video and image files that was created by Yahoo in
+        2004. The namespace extends RSS support for enclosures to enable a number
+        of different applications, such as video and audio search engines, multiple
+        bitrates and encodings of the same content, artist credits and copyright information,
+        and the ability to play the content with a specified media player.&lt;/p&gt;&lt;p&gt;In
+        the five years since its launch, Media RSS has become highly popular with
+        podcasters and other multimedia publishers and fosteredan active development
+        community at the Yahoo Groups mailing list &lt;ahref=\"http://tech.groups.yahoo.com/group/rss-media\"&gt;RSS-Media&lt;/a&gt;.
+        The namespace is supported by Yahoo Search, Bing, Wikipedia, Flock, Picasa,
+        FriendFeed, Bebo and many other sites and software.&lt;/p&gt;&lt;p&gt;Yahoo,
+        with the participation of members of RSS-Media, recently published version
+        1.5 of the Media RSS specification.&lt;/p&gt;&lt;p&gt;Over the past year,
+        there have been discussions about the RSS Advisory Board becoming the publisher
+        of the Media RSS namespace to ensure its continued availability and stability,
+        a function the board serves for RSS 0.90 and RSS 0.91. Netscape &lt;a href=\"http://www.rssboard.org/news/181/rss-090-091-moving-rss-advisory-board\"&gt;transferred
+        those specifications&lt;/a&gt; to the board in November 2008.&lt;/p&gt;&lt;p&gt;Sapna
+        Chandiramani, a senior engineering manager at Yahoo whose department has responsibility
+        for the Media RSS namespace, has indicated a willingness to have the board
+        take over custodianship.&lt;/p&gt;&lt;p&gt;I propose that the RSS Advisory
+        Board agrees to become the custodian of the namespace, publishing the current
+        version at the permanent URL &lt;ahref=\"http://www.rssboard.org/media-rss\"&gt;http://www.rssboard.org/media-rss&lt;/a&gt;
+        and archiving past versions.&lt;/p&gt;&lt;p&gt;Additionally, the board offers
+        to manage the RSS-Media mailing list.&lt;/p&gt;&lt;p&gt;Finally, the board
+        resolves that the namespace URI for Media RSS will remain \"http://search.yahoo.com/mrss/\"
+        for as long as it is published to ensure that software using the namespace
+        will continue to function properly.&lt;/p&gt;&lt;img src=\"http://feeds.feedburner.com/~r/rssboard/~4/HJP7tGqF-PE\"
+        height=\"1\" width=\"1\"/&gt;</description>\r\n      <pubDate>Tue, 24 Nov
+        2009 13:58:43 -0500</pubDate>\r\n      <dc:creator>Rogers Cadenhead</dc:creator>\r\n
+        \     <comments>http://www.rssboard.org/news/202/proposal-take-over-publication-media-rss#discuss</comments>\r\n
+        \     <guid isPermaLink=\"false\">tag:rssboard.org,2006:weblog.202</guid>\r\n
+        \     <category>announcements,</category>\r\n      <wordzilla:id>202</wordzilla:id>\r\n
+        \   <feedburner:origLink>http://www.rssboard.org/news/202/proposal-take-over-publication-media-rss</feedburner:origLink></item>\r\n
+        \   <item>\r\n      <title>6 Edits Made to RSS Specification</title>\r\n      <link>http://feeds.rssboard.org/~r/rssboard/~3/pqVeLgJ1T54/6-edits-made-rss-specification</link>\r\n
+        \     <description>&lt;p&gt;In a 7-0 vote, the RSS Advisory Board has approved
+        six edits to the &lt;a href=\"http://www.rssboard.org/rss-specification\"&gt;RSS
+        specification&lt;/a&gt;, the documentation for the RSS 2.0 format. These edits
+        do not affect the definitions of the elements and attributes that constitute
+        RSS. They were purely administrative changes that improve the readability
+        of the document, fix a broken link and factual errors, and link to use-case
+        documentation on the board's site.&lt;/p&gt;&lt;p&gt;The &lt;a href=\"http://www.rssboard.org/rss-change-notes\"&gt;revision
+        history&lt;/a&gt; for the specification describes the edits.&lt;/p&gt;&lt;p&gt;The
+        &lt;a href=\"http://tech.groups.yahoo.com/group/rss-board/message/278\"&gt;proposal&lt;/a&gt;
+        was made by Rogers Cadenhead and seconded by Sterling Camden. They were joined
+        by members Simone Carletti, James Holderness, Randy Charles Morin, Ryan Parman
+        and Paul Querna voting in favor.&lt;/p&gt;&lt;img src=\"http://feeds.feedburner.com/~r/rssboard/~4/pqVeLgJ1T54\"
+        height=\"1\" width=\"1\"/&gt;</description>\r\n      <pubDate>Mon, 30 Mar
+        2009 08:00:00 -0400</pubDate>\r\n      <dc:creator>Rogers Cadenhead</dc:creator>\r\n
+        \     <comments>http://www.rssboard.org/news/190/6-edits-made-rss-specification#discuss</comments>\r\n
+        \     <guid isPermaLink=\"false\">tag:rssboard.org,2006:weblog.190</guid>\r\n
+        \     <category>announcements,</category>\r\n      <wordzilla:id>190</wordzilla:id>\r\n
+        \   <feedburner:origLink>http://www.rssboard.org/news/190/6-edits-made-rss-specification</feedburner:origLink></item>\r\n
+        \   <item>\r\n      <title>The RSS Namespace? </title>\r\n      <link>http://feeds.rssboard.org/~r/rssboard/~3/6o1O1O_euSw/rss-namespace</link>\r\n
+        \     <description>&lt;P&gt;Should RSS have a namespace? Recently, there's
+        been discussion on th rss-public messages list about adding a namespace to
+        RSS for RSS elements that are embedded in other XML documents. Currently,
+        it is impossible to embed RSS elements inside other XML elements that have
+        a default namespace. This proposal would allow such.&lt;/P&gt;&lt;P&gt;Please
+        post your arguments here.&lt;BR&gt;&lt;A href=\"http://tech.groups.yahoo.com/group/rss-public/message/1874\"&gt;http://tech.groups.yahoo.com/group/rss-public/message/1874&lt;/A&gt;&lt;/P&gt;&lt;P&gt;Please
+        review the initial discussion here.&lt;BR&gt;&lt;A href=\"http://tech.groups.yahoo.com/group/rss-public/message/1831\"&gt;http://tech.groups.yahoo.com/group/rss-public/message/1831&lt;/A&gt;&lt;/P&gt;&lt;img
+        src=\"http://feeds.feedburner.com/~r/rssboard/~4/6o1O1O_euSw\" height=\"1\"
+        width=\"1\"/&gt;</description>\r\n      <pubDate>Fri, 13 Feb 2009 00:46:36
+        -0500</pubDate>\r\n      <dc:creator>Randy Charles Morin</dc:creator>\r\n
+        \     <comments>http://www.rssboard.org/news/187/rss-namespace#discuss</comments>\r\n
+        \     <guid isPermaLink=\"false\">tag:rssboard.org,2006:weblog.187</guid>\r\n
+        \     <category>announcements,</category>\r\n      <wordzilla:id>187</wordzilla:id>\r\n
+        \   <feedburner:origLink>http://www.rssboard.org/news/187/rss-namespace</feedburner:origLink></item>\r\n
+        \   <item>\r\n      <title>Ryan Parman Joins RSS Advisory Board</title>\r\n
+        \     <link>http://feeds.rssboard.org/~r/rssboard/~3/UFKtl4Tlo4g/ryan-parman-joins-rss-advisory-board</link>\r\n
+        \     <description>Congrats to Ryan Parman, the newest member of the RSS Advisory
+        Board.&lt;p&gt;Ryan is the creator of SimplePie and Tarzan AWS and co-founder
+        of WarpShare. He also co-built the Y! Messenger website. You can find out
+        more about Ryan on his Website.&lt;p&gt;&lt;a href=\"http://ryanparman.com/bio/\"&gt;Ryan's
+        Bio&lt;/a&gt;&lt;p&gt;&lt;img src=\"http://feeds.feedburner.com/~r/rssboard/~4/UFKtl4Tlo4g\"
+        height=\"1\" width=\"1\"/&gt;</description>\r\n      <pubDate>Fri, 12 Dec
+        2008 11:20:35 -0500</pubDate>\r\n      <dc:creator>Randy Charles Morin</dc:creator>\r\n
+        \     <comments>http://www.rssboard.org/news/185/ryan-parman-joins-rss-advisory-board#discuss</comments>\r\n
+        \     <guid isPermaLink=\"false\">tag:rssboard.org,2006:weblog.185</guid>\r\n
+        \     <category>announcements,</category>\r\n      <wordzilla:id>185</wordzilla:id>\r\n
+        \   <feedburner:origLink>http://www.rssboard.org/news/185/ryan-parman-joins-rss-advisory-board</feedburner:origLink></item>\r\n
+        \   <item>\r\n      <title>RSS in 2008</title>\r\n      <link>http://feeds.rssboard.org/~r/rssboard/~3/V3bMo95kJQk/rss-2008</link>\r\n
+        \     <description>This week, Steve Rubel has written a couple of blog posts
+        that have made me kick myself in the ass for not doing more as chair of the
+        board.&lt;p&gt;This is required reading for everybody who wants to help me
+        advance RSS.&lt;p&gt;&lt;p&gt;First he writes &lt;a href=\"http://www.micropersuasion.com/2008/10/rss-adoption-at.html\"&gt;RSS
+        Adoption at 11% and it May Be Peaking&lt;/a&gt;.&lt;p&gt;&lt;p&gt;Then he
+        writes &lt;a href=\"http://www.micropersuasion.com/2008/10/ive-seen-the-fu.html\"&gt;I've
+        Seen the Future of News, It's the Newsfeed&lt;/a&gt;.&lt;p&gt;&lt;img src=\"http://feeds.feedburner.com/~r/rssboard/~4/V3bMo95kJQk\"
+        height=\"1\" width=\"1\"/&gt;</description>\r\n      <wordzilla:extended>\r\n</wordzilla:extended>\r\n
+        \     <pubDate>Thu, 23 Oct 2008 23:06:48 -0400</pubDate>\r\n      <dc:creator>Randy
+        Charles Morin</dc:creator>\r\n      <comments>http://www.rssboard.org/news/184/rss-2008#discuss</comments>\r\n
+        \     <guid isPermaLink=\"false\">tag:rssboard.org,2006:weblog.184</guid>\r\n
+        \     <category>rss news,</category>\r\n      <wordzilla:id>184</wordzilla:id>\r\n
+        \   <feedburner:origLink>http://www.rssboard.org/news/184/rss-2008</feedburner:origLink></item>\r\n
+        \   <item>\r\n      <title>Randy Charles Morin Becomes RSS Advisory Board
+        Chair</title>\r\n      <link>http://feeds.rssboard.org/~r/rssboard/~3/mdOLat_v7-s/randy-charles-morin-becomes-rss-advisory</link>\r\n
+        \     <description>&lt;p&gt;Randy Charles Morin has become the chairman of
+        the &lt;a href=\"http://www.rssboard.org/\"&gt;RSS Advisory Board&lt;/a&gt;,
+        taking over for Rogers Cadenhead, who will continue as a member.&lt;/p&gt;&lt;p&gt;Morin,
+        a member of the board since 2006, is an RSS software developer who created
+        the enormously popular RSS-to-email service &lt;a href=\"http://www.sendmerss.com/\"&gt;SendMeRSS&lt;/a&gt;,
+        which had 50,000 users when it was sold to NBC Universal in 2007. Morin began
+        the site -- originally called R-Mail, as a personal project, turning it into
+        a business when it grew by 15,000 users over a 90-day period.&lt;/p&gt;&lt;p&gt;A
+        member of the RSS community who's been evangelizing the format for years,
+        Morin publishes the &lt;a href=\"http://www.therssweblog.com/\"&gt;RSS Blog&lt;/a&gt;,
+        a how-to site forRSS publishers and developers that has more than 6,800 subscribers
+        toits feed.&lt;/p&gt;&lt;p&gt;While on the board, Morin led the development
+        of the &lt;a href=\"http://www.rssboard.org/rss-profile\"&gt;RSS Best Practices
+        Profile&lt;/a&gt;, a set of recommendations that make it easier for feed publishers
+        and programmers to implement &lt;ahref=\"http://www.rssboard.org/rss-specification\"&gt;RSS
+        2.0&lt;/a&gt;.&lt;/p&gt;&lt;img src=\"http://feeds.feedburner.com/~r/rssboard/~4/mdOLat_v7-s\"
+        height=\"1\" width=\"1\"/&gt;</description>\r\n      <pubDate>Tue, 12 Aug
+        2008 12:42:49 -0400</pubDate>\r\n      <dc:creator>Rogers Cadenhead</dc:creator>\r\n
+        \     <comments>http://www.rssboard.org/news/183/randy-charles-morin-becomes-rss-advisory#discuss</comments>\r\n
+        \     <guid isPermaLink=\"false\">tag:rssboard.org,2006:weblog.183</guid>\r\n
+        \     <category>announcements,</category>\r\n      <wordzilla:id>183</wordzilla:id>\r\n
+        \   <feedburner:origLink>http://www.rssboard.org/news/183/randy-charles-morin-becomes-rss-advisory</feedburner:origLink></item>\r\n
+        \   <item>\r\n      <title>Microsoft Updates RSS User Agent</title>\r\n      <link>http://feeds.rssboard.org/~r/rssboard/~3/7raVobLX0mo/microsoft-updates-rss-user-agent</link>\r\n
+        \     <description>&lt;p&gt;Microsoft has announced that the &lt;a href=\"http://blogs.msdn.com/rssteam/archive/2008/02/28/the-rss-platform-user-agent-string.aspx\"&gt;user
+        agent string&lt;/a&gt; for the next version of the RSS Platform will be \"Windows-RSS-Platform/2.0
+        (MSIE 8.0; Windows NT 6.0)\".&lt;/p&gt;&lt;p&gt;The platform will be used
+        by Internet Explorer 8 to request the user's subscribed RSS feeds.&lt;/p&gt;&lt;img
+        src=\"http://feeds.feedburner.com/~r/rssboard/~4/7raVobLX0mo\" height=\"1\"
+        width=\"1\"/&gt;</description>\r\n      <pubDate>Thu, 28 Feb 2008 10:12:51
+        -0500</pubDate>\r\n      <dc:creator>Rogers Cadenhead</dc:creator>\r\n      <comments>http://www.rssboard.org/news/182/microsoft-updates-rss-user-agent#discuss</comments>\r\n
+        \     <guid isPermaLink=\"false\">tag:rssboard.org,2006:weblog.182</guid>\r\n
+        \     <category>rss news,</category>\r\n      <wordzilla:id>182</wordzilla:id>\r\n
+        \   <feedburner:origLink>http://www.rssboard.org/news/182/microsoft-updates-rss-user-agent</feedburner:origLink></item>\r\n
+        \   <item>\r\n      <title>RSS 0.90, 0.91 Moving to RSS Advisory Board</title>\r\n
+        \     <link>http://feeds.rssboard.org/~r/rssboard/~3/mySSzcIQSCw/rss-090-091-moving-rss-advisory-board</link>\r\n
+        \     <description>&lt;p&gt;Netscape &lt;a href=\"http://blog.netscape.com/2008/01/22/rss-specifications-moving-to-rss-advisory-board/\"&gt;announced&lt;/a&gt;
+        this afternoon that the first two versions of RSS, &lt;a href=\"http://www.rssboard.org/rss-0-9-0\"&gt;RSS
+        0.90&lt;/a&gt; and &lt;a href=\"http://www.rssboard.org/rss-0-9-1-netscape\"&gt;RSS
+        0.91&lt;/a&gt;, are moving to the &lt;a href=\"http://www.rssboard.org/\"&gt;RSS
+        Advisory Board&lt;/a&gt;.&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;The RSS specification
+        documents, DTDs, and help files for the first versions of RSS (v0.9, v0.91)
+        are being moved to RSSBoard.org, where they will be hosted by the RSS Advisory
+        Board in perpetuity. Netscape will continue to host these files (via redirect)
+        on the My Netscape domain (my.netscape.com) until August 1st, 2008.&lt;/p&gt;&lt;p&gt;Netscape
+        launched RSS on March 15, 1999, with the My Netscape Network and an RSS 0.90
+        specification written by Ramanathan Guha. Four months later, RSS 0.91 was
+        launched with a specification written by Dan Libby. Five years after revolutionizing
+        the web browser, Netscape sparked another revolution on the web with XML-based
+        syndication.&lt;/p&gt;&lt;p&gt;All websites that produce RSS 0.9 or RSS 0.91
+        feeds will need to either convert to using the current standard (RSS v2.0),
+        or if desired, convert their v0.9/v0.91 feeds properly using &lt;a href=\"http://www.rssboard.org/convert-rss-0-91-to-rss-2-0\"&gt;this
+        guide&lt;/a&gt;, provided by the RSS Advisory Board, by August 1st.&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;The
+        board will ensure the continued availability of the specifications and the
+        &lt;a href=\"http://www.rssboard.org/rss-0.91.dtd\"&gt;RSS 0.91 DTD&lt;/a&gt;
+        (document type definition), which still receives four million hits a day from
+        XML parsing software. We could use some advice from Apache admins on how to
+        serve a file that often without reducing the HTTP server to a smoldering heap
+        of rubble.&lt;/p&gt;&lt;p&gt;In the eight years since Netscape published the
+        first RSS specification, the format has become as essential to the web as
+        HTML, XHTML and CSS. By my estimation, the specs and related DTDs have been
+        requested from Netscape's servers more than one billion times.&lt;/p&gt;&lt;p&gt;As
+        the current chairman of the board, I'd like to thank Guha and Libby for their
+        work on the first two versions of RSS and more recent Netscape employees Chris
+        Finke and Tom Drapeau for helping this transition. Though most RSS feeds use
+        the &lt;a href=\"http://www.rssboard.org/rss-specification\"&gt;current version&lt;/a&gt;
+        today, thousands of feed publishers continue to employ RSS 0.9 and RSS 0.91.
+        Long after Netscape closed the first incarnation of the My Netscape Network
+        and had no business interest in RSS, the company contributed to the success
+        of web syndication by keeping these documents online.&lt;/p&gt;&lt;img src=\"http://feeds.feedburner.com/~r/rssboard/~4/mySSzcIQSCw\"
+        height=\"1\" width=\"1\"/&gt;</description>\r\n      <pubDate>Tue, 22 Jan
+        2008 19:14:15 -0500</pubDate>\r\n      <dc:creator>Rogers Cadenhead</dc:creator>\r\n
+        \     <comments>http://www.rssboard.org/news/181/rss-090-091-moving-rss-advisory-board#discuss</comments>\r\n
+        \     <guid isPermaLink=\"false\">tag:rssboard.org,2006:weblog.181</guid>\r\n
+        \     <category>announcements,</category>\r\n      <wordzilla:id>181</wordzilla:id>\r\n
+        \   <feedburner:origLink>http://www.rssboard.org/news/181/rss-090-091-moving-rss-advisory-board</feedburner:origLink></item>\r\n
+        \   <item>\r\n      <title>Sterling Camden, Simone Carletti Join RSS Advisory
+        Board</title>\r\n      <link>http://feeds.rssboard.org/~r/rssboard/~3/Ki5ZnCvz9UI/sterling-camden-simone-carletti-join-rss</link>\r\n
+        \     <description>&lt;p&gt;Two new members have joined the RSS Advisory Board:
+        Sterling \"Chip\" Camden and Simone Carletti.&lt;/p&gt;&lt;p&gt;Camden's a
+        software developer who covers technology and programming topics for &lt;a
+        href=\"http://techrepublic.com.com/\"&gt;TechRepublic&lt;/a&gt;. He also writes
+        about RSS frequently on his weblogs &lt;a href=\"http://www.chipsquips.com/\"&gt;Chip's
+        Quips&lt;/a&gt; and &lt;a href=\"http://www.chipstips.com/\"&gt;Chip's Tips&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;A
+        commercial programmer since 1978, Camden has created the &lt;a href=\"http://www.chipstips.com/?p=159\"&gt;OPML
+        Blogroll&lt;/a&gt; and &lt;a href=\"http://www.chipstips.com/?p=171\"&gt;OPML
+        Browser&lt;/a&gt; widgets for the WordPress weblog publishing platform. He's
+        also a supporter of the yearly &lt;a href=\"http://www.par4kidssake.org/\"&gt;Providing
+        Autism Research golf tournament&lt;/a&gt; in Pleasanton, Calif.&lt;/p&gt;&lt;p&gt;The
+        first Italian to serve on the board, Carletti is a technical manager at &lt;a
+        href=\"http://www.alturawmc.it/\"&gt;Altura Labs&lt;/a&gt; and a contributor
+        to the instructional web publishing site &lt;a href=\"http://www.html.it/\"&gt;HTML.it&lt;/a&gt;.
+        He specializes in RSS-related issues.&lt;/p&gt;&lt;p&gt;Carletti's also the
+        author of the &lt;a href=\"http://rss.specifiche.it/2.0/\"&gt;Italian translation&lt;/a&gt;
+        of the &lt;a href=\"http://www.rssboard.org/rss-specification\"&gt;RSS specification&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Welcome
+        to the board!&lt;/p&gt;&lt;img src=\"http://feeds.feedburner.com/~r/rssboard/~4/Ki5ZnCvz9UI\"
+        height=\"1\" width=\"1\"/&gt;</description>\r\n      <pubDate>Wed, 16 Jan
+        2008 17:39:26 -0500</pubDate>\r\n      <dc:creator>Rogers Cadenhead</dc:creator>\r\n
+        \     <comments>http://www.rssboard.org/news/180/sterling-camden-simone-carletti-join-rss#discuss</comments>\r\n
+        \     <guid isPermaLink=\"false\">tag:rssboard.org,2006:weblog.180</guid>\r\n
+        \     <category>announcements,</category>\r\n      <wordzilla:id>180</wordzilla:id>\r\n
+        \   <feedburner:origLink>http://www.rssboard.org/news/180/sterling-camden-simone-carletti-join-rss</feedburner:origLink></item>\r\n
+        \   <item>\r\n      <title>WordPress Adds Atom:Link to RSS Feeds</title>\r\n
+        \     <link>http://feeds.rssboard.org/~r/rssboard/~3/mE0WTt3XTM8/wordpress-adds-atomlink-rss-feeds</link>\r\n
+        \     <description>&lt;p&gt;WordPress support for the &lt;span class=\"sourcecode\"&gt;atom:link&lt;/span&gt;
+        element in &lt;a href=\"http://www.rssboard.org/rss-specification\"&gt;RSS&lt;/a&gt;
+        feeds has gone live in both the standalone and multiuser versions of the software.
+        The &lt;a href=\"http://www.rssboard.org/rss-profile\"&gt;RSS Profile&lt;/a&gt;
+        recommends that feeds include &lt;span class=\"sourcecode\"&gt;atom:link&lt;/span&gt;
+        to identify the feed's URL.&lt;/p&gt;&lt;p class=\"sourcecode\"&gt;&amp;lt;atom:link
+        href=\"http://photomatt.net/feed/\" rel=\"self\" type=\"application/rss+xml\"
+        /&amp;gt;&lt;/p&gt;&lt;p&gt;You can see the element in WordPress creator Matt
+        Mullenweg's &lt;a href=\"http://photomatt.net/feed/\"&gt;RSS feed&lt;/a&gt;,
+        which is published with version \"2.4-bleeding,\" and the &lt;a href=\"http://strangemaps.wordpress.com/feed/\"&gt;Strange
+        Maps feed&lt;/a&gt; published with WordPress MU. The official release of WordPress
+        2.4 is &lt;a href=\"http://wordpress.org/about/roadmap/\"&gt;scheduled&lt;/a&gt;
+        for December.&lt;/p&gt;&lt;img src=\"http://feeds.feedburner.com/~r/rssboard/~4/mE0WTt3XTM8\"
+        height=\"1\" width=\"1\"/&gt;</description>\r\n      <pubDate>Fri, 26 Oct
+        2007 12:39:33 -0400</pubDate>\r\n      <dc:creator>Rogers Cadenhead</dc:creator>\r\n
+        \     <comments>http://www.rssboard.org/news/179/wordpress-adds-atomlink-rss-feeds#discuss</comments>\r\n
+        \     <guid isPermaLink=\"false\">tag:rssboard.org,2006:weblog.179</guid>\r\n
+        \     <category>announcements,</category>\r\n      <wordzilla:id>179</wordzilla:id>\r\n
+        \   <feedburner:origLink>http://www.rssboard.org/news/179/wordpress-adds-atomlink-rss-feeds</feedburner:origLink></item>\r\n
+        \   <item>\r\n      <title>RSS Best Practices Profile Published</title>\r\n
+        \     <link>http://feeds.rssboard.org/~r/rssboard/~3/v8f4oGoVzT0/rss-best-practices-profile-published</link>\r\n
+        \     <description>&lt;p&gt;The proposal to &lt;a href=\"http://www.rssboard.org/news/177/proposal-publish-rss-best-practices\"&gt;endorse
+        and publish the RSS Profile&lt;/a&gt; has passed 8-1 with RSS Advisory Board
+        members Rogers Cadenhead, Christopher Finke, James Holderness, Eric Lunt,
+        Randy Charles Morin, Paul Querna, Jake Savin and Jason Shellen voting in favor
+        and Matthew Bookspan voting against.&lt;/p&gt;&lt;p&gt;The &lt;a href=\"http://www.rssboard.org/rss-profile\"&gt;RSS
+        Profile&lt;/a&gt; makes it easier for feed publishers and programmers to implement
+        &lt;a href=\"http://www.rssboard.org/rss-specification\"&gt;RSS 2.0&lt;/a&gt;,
+        offering advice on issues that arise as you develop software that employs
+        the format. For 18 months, the board worked with the RSS community on interoperability
+        issues, receiving help from representatives at Bloglines, FeedBurner, Google,
+        Microsoft, Netscape, Six Apart and Yahoo. The profile tackles the most frequently
+        asked questions posed by developers:&lt;/p&gt;&lt;p&gt;&lt;ol&gt;&lt;li&gt;How
+        many enclosures can an item contain?&lt;/li&gt;&lt;li&gt;Are relative URLs
+        OK in item descriptions?&lt;/li&gt;&lt;li&gt;Is it OK to use HTML in elements
+        other than an item's description?&lt;/li&gt;&lt;/ol&gt;&lt;/p&gt;&lt;p&gt;For
+        the answers, read the sections on &lt;a href=\"http://www.rssboard.org/rss-profile#element-channel-item-enclosure\"&gt;enclosures&lt;/a&gt;,
+        &lt;a href=\"http://www.rssboard.org/rss-profile#element-channel-item-description\"&gt;item
+        descriptions&lt;/a&gt; and &lt;a href=\"http://www.rssboard.org/rss-profile#data-types-characterdata\"&gt;character
+        data&lt;/a&gt;, respectively.&lt;/p&gt;&lt;p&gt;Sam Ruby announced this morning
+        that the &lt;a href=\"http://feedvalidator.org/\"&gt;Feed Validator&lt;/a&gt;
+        now tests for conformance to the profile, offering &lt;a href=\"http://feedvalidator.org/news/archives/2007/10/15/rss_best_practices.html\"&gt;11
+        new checks&lt;/a&gt; for improving interoperability.&lt;/p&gt;&lt;p&gt;If
+        you'd like to comment on the profile and the new validator checks, post on
+        the mailing list &lt;a href=\"http://tech.groups.yahoo.com/group/rss-public/\"&gt;RSS-Public&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;As part of the vote, the following sentence has been added to the
+        &lt;a href=\"http://www.rssboard.org/rss-specification#aboutThisDocument\"&gt;About
+        this document&lt;/a&gt; section of the RSS specification: \"The &lt;a href=\"http://www.rssboard.org/rss-profile\"&gt;RSS
+        Profile&lt;/a&gt; contains a set of recommendations for how to create RSS
+        documents that work best in the wide and diverse audience of client software
+        that supports the format.\" No other changes were made and all edits to the
+        specification are &lt;a href=\"http://www.rssboard.org/rss-change-notes\"&gt;logged&lt;/a&gt;.
+        This revision of the document has the version number 2.0.10.&lt;/p&gt;&lt;p&gt;With
+        the publication of the profile, we're eager to work with companies and individual
+        developers on the adoption of its recommendations. Also, we're looking for
+        people who can write foreign language translations of the document, which
+        has been released under the &lt;a href=\"http://creativecommons.org/licenses/by-sa/2.0/\"&gt;Creative
+        Commons Attribution-ShareAlike 2.0&lt;/a&gt; license.&lt;/p&gt;&lt;img src=\"http://feeds.feedburner.com/~r/rssboard/~4/v8f4oGoVzT0\"
+        height=\"1\" width=\"1\"/&gt;</description>\r\n      <pubDate>Mon, 15 Oct
+        2007 12:20:06 -0400</pubDate>\r\n      <dc:creator>Rogers Cadenhead</dc:creator>\r\n
+        \     <comments>http://www.rssboard.org/news/178/rss-best-practices-profile-published#discuss</comments>\r\n
+        \     <guid isPermaLink=\"false\">tag:rssboard.org,2006:weblog.178</guid>\r\n
+        \     <category>announcements,</category>\r\n      <wordzilla:id>178</wordzilla:id>\r\n
+        \   <feedburner:origLink>http://www.rssboard.org/news/178/rss-best-practices-profile-published</feedburner:origLink></item>\r\n
+        \   <item>\r\n      <title>Proposal: Publish the RSS Best-Practices Profile</title>\r\n
+        \     <link>http://feeds.rssboard.org/~r/rssboard/~3/xD2NG9jbQT4/proposal-publish-rss-best-practices</link>\r\n
+        \     <description>&lt;p&gt;The following &lt;a href=\"http://www.rssboard.org/\"&gt;RSS
+        Advisory Board&lt;/a&gt; proposal has been made by Rogers Cadenhead and seconded
+        by Randy Charles Morin.&lt;/p&gt;&lt;p&gt;Under the advisory board charter,
+        the board has seven days to discuss the proposal followed by seven days to
+        vote on it. Interested parties can comment on the proposal on the mailing
+        list &lt;a href=\"http://groups.yahoo.com/group/rss-public\"&gt;RSS-Public&lt;/a&gt;.&lt;/p&gt;&lt;h5&gt;Proposal&lt;/h5&gt;&lt;p&gt;For
+        the last 18 months, the RSS Advisory Board has been drafting a set of best-practice
+        recommendations for &lt;a href=\"http://www.rssboard.org/rss-specification\"&gt;RSS&lt;/a&gt;.
+        Working with the developers of browsers such as Microsoft Internet Explorer
+        and Mozilla Firefox, aggregators such as Bloglines and Google Reader, and
+        blogging tools including Movable Type, we've looked for areas where questions
+        about the RSS format have led to differences in how software has been implemented
+        to produce and consume RSS feeds.&lt;/p&gt; &lt;p&gt;The result of our work
+        is the &lt;a href=\"http://www.rssboard.org/rss-profile\"&gt;RSS Profile&lt;/a&gt;.
+        The lead authors are James Holderness, Morin, Geoffrey Sneddon and myself.
+        The profile isn't a set of rules; it's a set of suggestions drafted by programmers
+        and web publishers who've been working with RSS since the format's first release
+        in 1999. Our goal is for the profile to be the second document programmers
+        consult when they're learning how to implement RSS.&lt;/p&gt;&lt;p&gt;The
+        profile tackles some long-standing issues in RSS implementation, including
+        the proper number of enclosures per item, the meaning of the TTL element and
+        the use of HTML markup in character data.&lt;/p&gt;&lt;p&gt;In addition to
+        recommendations for the RSS elements documented in the specification, the
+        profile includes advice for four common namespace elements: atom:link, content:encoded,
+        dc:creator and slash:comments.&lt;/p&gt;&lt;p&gt;We propose that the board
+        endorse and publish the RSS Profile, making it available under a &lt;a href=\"http://www.rssboard.org/rss-profile#license\"&gt;Creative
+        Commons Attribution-ShareAlike 2.0 license&lt;/a&gt; so that others can build
+        upon and extend it with their own recommendations.&lt;/p&gt;&lt;p&gt;Additionally,
+        we propose that the following sentence be added to the &lt;a href=\"http://www.rssboard.org/rss-specification#aboutThisDocument\"&gt;About
+        this document&lt;/a&gt; section of the specification, as a new fifth paragraph:
+        \"The &lt;a href=\"http://www.rssboard.org/rss-profile\"&gt;RSS Profile&lt;/a&gt;
+        contains a set of recommendations for how to create RSS documents that work
+        best in the wide and diverse audience of client software that supports the
+        format.\"&lt;img src=\"http://feeds.feedburner.com/~r/rssboard/~4/xD2NG9jbQT4\"
+        height=\"1\" width=\"1\"/&gt;</description>\r\n      <pubDate>Mon, 01 Oct
+        2007 23:59:51 -0400</pubDate>\r\n      <dc:creator>Rogers Cadenhead</dc:creator>\r\n
+        \     <comments>http://www.rssboard.org/news/177/proposal-publish-rss-best-practices#discuss</comments>\r\n
+        \     <guid isPermaLink=\"false\">tag:rssboard.org,2006:weblog.177</guid>\r\n
+        \     <category>announcements,</category>\r\n      <wordzilla:id>177</wordzilla:id>\r\n
+        \   <feedburner:origLink>http://www.rssboard.org/news/177/proposal-publish-rss-best-practices</feedburner:origLink></item>\r\n
+        \   <item>\r\n      <title>BlogLines Adds IPhone Version</title>\r\n      <link>http://feeds.rssboard.org/~r/rssboard/~3/08fEv32pMO4/bloglines-adds-iphone-version</link>\r\n
+        \     <description>&lt;p&gt;The web-based RSS reader Bloglines now offers
+        a mobile version of its service &lt;a href=\"http://i.bloglines.com/\"&gt;optimized
+        for Apple iPhone&lt;/a&gt;. You can read full-text feeds, search for feeds
+        and specific text across all feeds, and turn on &lt;a href=\"http://www.skweezer.net/\"&gt;Skweezer&lt;/a&gt;,
+        a service that makes web pages more readable on mobile devices.&lt;/p&gt;&lt;img
+        src=\"http://feeds.feedburner.com/~r/rssboard/~4/08fEv32pMO4\" height=\"1\"
+        width=\"1\"/&gt;</description>\r\n      <pubDate>Mon, 13 Aug 2007 11:35:24
+        -0400</pubDate>\r\n      <dc:creator>Rogers Cadenhead</dc:creator>\r\n      <comments>http://www.rssboard.org/news/174/bloglines-adds-iphone-version#discuss</comments>\r\n
+        \     <guid isPermaLink=\"false\">tag:rssboard.org,2006:weblog.174</guid>\r\n
+        \     <category>rss news,</category>\r\n      <wordzilla:id>174</wordzilla:id>\r\n
+        \   <feedburner:origLink>http://www.rssboard.org/news/174/bloglines-adds-iphone-version</feedburner:origLink></item>\r\n
+        \ </channel>\r\n</rss>\r\n"
+    http_version: 
+  recorded_at: Tue, 13 Nov 2012 17:47:29 GMT
+recorded_with: VCR 2.3.0

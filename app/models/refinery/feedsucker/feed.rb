@@ -20,9 +20,9 @@ module Refinery
           last_item = (self.number_of_posts && self.number_of_posts > 0) ? self.number_of_posts : items.size
           self.posts.destroy_all if self.delete_preview
           items[0..last_item-1].each do |item|
-            unless FeedsuckerPost.find_by_url(item[:post_url])
-              self.posts << FeedsuckerPost.create(
-              :feedsucker_feed_id => self.id,
+            unless Post.find_by_url(item[:post_url])
+              self.posts << Post.create(
+              :feed_id => self.id,
               :blog_title => item[:blog_title],
               :blog_url => item[:blog_url],
               :title => item[:post_title],

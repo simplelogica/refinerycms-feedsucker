@@ -1,5 +1,7 @@
 class Refinery::Feedsucker::Post < ActiveRecord::Base
 
+  attr_accessible :feed_id, :blog_title, :blog_url, :title, :content, :date, :url
+
   belongs_to :feed
   validates_presence_of :feed
 
