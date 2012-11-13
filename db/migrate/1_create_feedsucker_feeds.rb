@@ -21,15 +21,13 @@ class CreateFeedsuckerFeeds < ActiveRecord::Migration
 
     add_index :feedsucker_feeds, :id
 
-    load(Rails.root.join('db', 'seeds', 'feedsucker_feeds.rb'))
   end
 
   def self.down
-    UserPlugin.destroy_all({:name => "feedsucker_feeds"})
 
-    Page.delete_all({:link_url => "/feedsucker_feeds"})
-
+    UserPlugin.destroy_all({:name => "refinerycms_feedsucker"})
     drop_table :feedsucker_feeds
+
   end
 
 end
