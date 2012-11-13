@@ -7,8 +7,8 @@ class CreateFeedsuckerFeeds < ActiveRecord::Migration
       t.string :url
       t.integer :position
 
-      t.integer :number_of_posts
-      t.boolean :delete_preview
+      t.integer :number_of_posts, :default => 0
+      t.boolean :delete_preview, :default => true
       t.string :xpath_blog_title
       t.string :xpath_blog_url
       t.string :xpath_post_title

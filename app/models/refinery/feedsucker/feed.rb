@@ -8,22 +8,16 @@ module Refinery
       attr_accessible :title, :nicetitle, :url, :position
 
       acts_as_indexed :fields => [:title, :nicetitle, :url]
-      has_many :posts, :class_name =>'FeedsuckerPost'
-
+      has_many :posts
 
       validates :title, :presence => true, :uniqueness => true
       validates :url, :presence => true, :uniqueness => true
-
-       def before_create
-        self.number_of_posts ||= 0 # Load all entries/posts by default
-        self.delete_preview ||= true # delete all old posts by default
-      end
 
       def suck!
         #items = self.xpath_post_url ? xml_feed_items : rss_or_atom_feed_items
         items = xml_feed_items
         if items.any?
-          last_item = self.number_of_posts > 0 ? self.number_of_posts : items.size
+          last_item = (self.number_of_posts && self.number_of_posts > 0) ? self.number_of_posts : items.size
           self.posts.destroy_all if self.delete_preview
           items[0..last_item-1].each do |item|
             unless FeedsuckerPost.find_by_url(item[:post_url])

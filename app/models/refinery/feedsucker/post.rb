@@ -1,6 +1,6 @@
 class Refinery::Feedsucker::Post < ActiveRecord::Base
 
-  belongs_to :feed, :class_name => 'FeedsuckerFeed', :foreign_key => 'feedsucker_feed_id'
+  belongs_to :feed
   validates_presence_of :feed
 
   def method_missing(method, *args, &block)
