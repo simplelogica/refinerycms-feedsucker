@@ -9,5 +9,5 @@ Gem::Specification.new do |s|
   s.summary           = 'Feedsucker engine for Refinery CMS'
   s.require_paths     = %w(lib)
   s.files             = Dir['lib/**/*', 'config/**/*', 'app/**/*']
-  s.add_dependency    'refinerycms', '>=0.9.9' 
+  s.add_dependency    'refinerycms', '~> 2.0.0'
 end
