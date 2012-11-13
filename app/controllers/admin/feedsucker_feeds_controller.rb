@@ -1,5 +1,5 @@
 module Admin
-  class FeedsuckerFeedsController < Admin::BaseController
+  class FeedsuckerFeedsController < ::Refinery::AdminController
 
     crudify :feedsucker_feed
 
