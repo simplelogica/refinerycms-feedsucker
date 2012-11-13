@@ -3,6 +3,8 @@ source "http://rubygems.org"
 gemspec
 
 gem 'refinerycms', '~> 2.0.0'
+gem 'vcr'
+gem 'webmock'
 
 # Database Configuration
 platforms :jruby do
