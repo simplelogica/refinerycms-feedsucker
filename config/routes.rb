@@ -1,12 +1,16 @@
 Refinery::Core::Engine.routes.draw do
 
-  resources :feedsucker_feeds, :only => [:index, :show]
-
-  scope(:path => 'refinery', :as => 'admin', :module => 'admin') do
-    resources :feedsucker_feeds, :except => :show do
-      collection do
-        post :update_positions
+  namespace :feedsucker, :path => '' do
+    namespace :admin, :path => 'refinery' do
+      resources :feeds, :except => :show do
+        collection do
+          post :update_positions
+        end
       end
     end
+
+    resources :feeds, :only => [:index, :show]
   end
+
+
 end

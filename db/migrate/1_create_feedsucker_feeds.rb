@@ -1,7 +1,7 @@
 class CreateFeedsuckerFeeds < ActiveRecord::Migration
 
   def self.up
-    create_table :feedsucker_feeds do |t|
+    create_table :refinery_feedsucker_feeds do |t|
       t.string :title
       t.string :nicetitle
       t.string :url
@@ -19,14 +19,14 @@ class CreateFeedsuckerFeeds < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :feedsucker_feeds, :id
+    add_index :refinery_feedsucker_feeds, :id
 
   end
 
   def self.down
 
     UserPlugin.destroy_all({:name => "refinerycms_feedsucker"})
-    drop_table :feedsucker_feeds
+    drop_table :refinery_feedsucker_feeds
 
   end
 

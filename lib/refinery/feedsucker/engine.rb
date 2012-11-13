@@ -9,7 +9,7 @@ module Refinery
         Refinery::Plugin.register do |plugin|
           plugin.pathname = root
           plugin.name = "refinerycms_feedsucker"
-          plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.blog_admin_feedsucker_feeds_path }
+          plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.feedsucker_admin_feeds_path }
           plugin.menu_match = /refinery\/feedsucker\/?/
           plugin.activity = [
             {

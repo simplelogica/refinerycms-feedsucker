@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="feeds">
+    <% @feeds.each do |feed| %>
+      <li>
+        <%= link_to feed.title, refinery.feedsucker_feed_url(feed) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/refinery/content_page" %>

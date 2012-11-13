@@ -1,0 +1,18 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(feed) -%>">
+  <span class='title'>
+    <%= feed.title %>
+    <span class="preview">&nbsp;</span>
+  </span>
+  <span class='actions'>
+    <%= link_to refinery_icon_tag("application_go.png"), refinery.feed_url(feed),
+        :title => t('.view_live_html'),
+        :target => "_blank" %>
+    <%= link_to refinery_icon_tag("application_edit.png"), refinery.edit_feedsucker_admin_feed_path(feed),
+         :title => t('.edit') %>
+    <%= link_to refinery_icon_tag("delete.png"), refinery.feedsucker_admin_feed_path(feed),
+        :class => "cancel confirm-delete",
+        :title => t('.delete'),
+        :confirm => t('message', :scope => 'shared.admin.delete', :title => feed.title),
+        :method => :delete %>
+  </span>
+</li>

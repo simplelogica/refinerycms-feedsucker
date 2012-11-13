@@ -1,7 +1,7 @@
 class CreateFeedsuckerPosts < ActiveRecord::Migration
 
   def self.up
-    create_table :feedsucker_posts do |t|
+    create_table :refinery_feedsucker_posts do |t|
       t.integer :feedsucker_feed_id
       t.string :blog_title
       t.string :blog_url
@@ -13,12 +13,12 @@ class CreateFeedsuckerPosts < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :feedsucker_posts, :feedsucker_feed_id
+    add_index :refinery_feedsucker_posts, :feedsucker_feed_id
 
   end
 
   def self.down
-    drop_table :feedsucker_posts
+    drop_table :refinery_feedsucker_posts
   end
 
 end
