@@ -1,4 +1,5 @@
-Refinery::Application.routes.draw do
+Refinery::Core::Engine.routes.draw do
+
   resources :feedsucker_feeds, :only => [:index, :show]
 
   scope(:path => 'refinery', :as => 'admin', :module => 'admin') do
