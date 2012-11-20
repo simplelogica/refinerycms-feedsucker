@@ -15,12 +15,20 @@ module Refinery
 
       def suck!
         #items = self.xpath_post_url ? xml_feed_items : rss_or_atom_feed_items
+        Rails.logger.info "Sucking feeds!"
         items = xml_feed_items
+        Rails.logger.info "--> #{items.length} elements sucked"
         if items.any?
           last_item = (self.number_of_posts && self.number_of_posts > 0) ? self.number_of_posts : items.size
           self.posts.destroy_all if self.delete_preview
           items[0..last_item-1].each do |item|
+
+            Rails.logger.info "--> Item #{item[:post_url]} sucked"
+
             unless Post.find_by_url(item[:post_url])
+
+              Rails.logger.info "--> Item #{item[:post_url]} saved"
+
               self.posts << Post.create(
               :feed_id => self.id,
               :blog_title => item[:blog_title],
