@@ -5,7 +5,7 @@ module Refinery
   module Feedsucker
     class Feed < ActiveRecord::Base
 
-      attr_accessible :title, :nicetitle, :url, :position
+      attr_accessible :title, :nicetitle, :url, :position, :number_of_posts, :delete_preview, :xpath_blog_title, :xpath_blog_url, :xpath_post_title, :xpath_post_url, :xpath_post_date, :xpath_post_content
 
       acts_as_indexed :fields => [:title, :nicetitle, :url]
       has_many :posts
@@ -46,32 +46,35 @@ module Refinery
         self.find(:all).each {|feed| feed.suck!}
       end
 
-      private
-        def xml_feed_items
-          xmldata = Net::HTTP.get_response(URI.parse(self.url)).body
-          xmldoc = REXML::Document.new(xmldata)
-          xpath_defaults = xpath_defaults_for(xmldoc)
-          xpath = self.xpath_post_url || xpath_defaults[:post_url]
-          items = REXML::XPath.match(xmldoc, xpath).map {|url| {:post_url => url.to_s}}
-          %w{post_title post_content post_date
-    blog_title blog_url}.each do |suffix|
-            xpath = self.send("xpath_#{suffix}") || xpath_defaults[suffix.to_sym]
-            REXML::XPath.match(xmldoc, xpath).each_with_index do |value, index|
-              items[index][suffix.to_sym] = value.to_s
-            end
-          end
-          items
-        end
+      def xpath_defaults_for(xmldoc)
+        # TODO: xpaths if xmldoc is an Atom feed
+        { :blog_title => '//channel/title/text()',
+          :blog_url => '//channel/link/text()',
+          :post_title => '//item/title/text()',
+          :post_url => '//item/link/text()',
+          :post_date => '//item/pubDate/text()',
+          :post_content => '//item/description/text()' }
+      end
 
-        def xpath_defaults_for(xmldoc)
-          # TODO: xpaths if xmldoc is an Atom feed
-          { :blog_title => '//channel/title/text()',
-            :blog_url => '//channel/link/text()',
-            :post_title => '//item/title/text()',
-            :post_url => '//item/link/text()',
-            :post_date => '//item/pubDate/text()',
-            :post_content => '//item/description/text()' }
+      def xml_feed_items
+        xmldata = Net::HTTP.get_response(URI.parse(self.url)).body
+        xmldoc = REXML::Document.new(xmldata)
+        xpath_defaults = xpath_defaults_for(xmldoc)
+        xpath = self.xpath_post_url || xpath_defaults[:post_url]
+        items = REXML::XPath.match(xmldoc, xpath).map {|url| {:post_url => url.to_s}}
+        %w{post_title post_content post_date
+  blog_title blog_url}.each do |suffix|
+          xpath = self.send("xpath_#{suffix}") || xpath_defaults[suffix.to_sym]
+          REXML::XPath.match(xmldoc, xpath).each_with_index do |value, index|
+            items[index][suffix.to_sym] = value.to_s
+          end
         end
+        items
+      end
+
+
+
+
 
     end
   end

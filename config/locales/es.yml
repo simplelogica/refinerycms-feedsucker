@@ -18,6 +18,25 @@ es:
             view_live_html: Ver este feed en la página </em>(en una nueva ventana)</em>
             edit: Editar este feed
             delete: Eliminar este feed
+          form:
+            delete_preview: Borrar anteriores
+            nicetitle: clave
+            number_of_posts: Posts a recoger
+            test: Prueba
+            test_failed: No se han podido recuperar posts
+            test_post_title: Título
+            test_post_url: URL
+            test_post_date: Fecha
+            test_blog_title: Título de blog
+            test_blog_url: URL de blog
+            title: Título del feed
+            url: URL del feed
+            xpath_blog_title: XPath para obtener el título del blog
+            xpath_blog_url: XPath para obtener la url del blog
+            xpath_post_content: XPath para obtener el contenido del post
+            xpath_post_date: XPath para obtener la fecha del post
+            xpath_post_title: XPath para obtener el título del post
+            xpath_post_url: XPath para obtener la url del post
       feeds:
         show:
           other: Otros feeds

@@ -18,7 +18,25 @@ en:
             view_live_html: View this feedsucker feed live <br/><em>(opens in a new window)</em>
             edit: Edit this feedsucker feed
             delete: Remove this feedsucker feed forever
-
+          form:
+            delete_preview: Delete old previous post
+            nicetitle: nicetitle
+            number_of_posts: Number of posts
+            test: Test
+            test_failed: No post has been retrieved
+            test_post_title: Título
+            test_post_url: URL
+            test_post_date: Fecha
+            test_blog_title: Título de blog
+            test_blog_url: URL de blog
+            title: Feed's title
+            url: Feed's URL
+            xpath_blog_title: XPath to retrieve blog's title
+            xpath_blog_url: XPath to retrieve blog's url
+            xpath_post_content: XPath to retrieve post's content
+            xpath_post_date: XPath to retrieve post's date
+            xpath_post_title: XPath to retrieve post's title
+            xpath_post_url: XPath to retrieve post's url
       feeds:
         show:
           other: Other Feedsucker Feeds

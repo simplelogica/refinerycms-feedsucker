@@ -5,19 +5,97 @@
   } %>
 
   <div class='field'>
-    <%= f.label :title -%>
+    <%= f.label :title, t(".title") -%>
     <%= f.text_field :title, :class => 'larger widest' -%>
   </div>
 
   <div class='field'>
-    <%= f.label :nicetitle -%>
+    <%= f.label :nicetitle, t(".nicetitle") -%>
     <%= f.text_field :nicetitle -%>
   </div>
 
   <div class='field'>
-    <%= f.label :url -%>
+    <%= f.label :url, t(".url") -%>
     <%= f.text_field :url -%>
   </div>
+
+  <div class='field'>
+    <%= f.label :number_of_posts, t(".number_of_posts") -%>
+    <%= f.text_field :number_of_posts -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :delete_preview, t(".delete_preview") -%>
+    <%= f.check_box :delete_preview -%>
+  </div>
+
+
+  <div class='field'>
+    <%= f.label :xpath_blog_title, t(".xpath_blog_title") -%>
+    <%= f.text_field :xpath_blog_title, value: @feed.xpath_blog_title.blank? ? @feed.xpath_defaults_for("")[:blog_title] : @feed.xpath_blog_title-%>
+  </div>
+
+
+  <div class='field'>
+    <%= f.label :xpath_blog_url, t(".xpath_blog_url") -%>
+    <%= f.text_field :xpath_blog_url, value: @feed.xpath_blog_url.blank? ? @feed.xpath_defaults_for("")[:blog_title] : @feed.xpath_blog_url-%>
+  </div>
+
+
+  <div class='field'>
+    <%= f.label :xpath_post_title, t(".xpath_post_title") -%>
+    <%= f.text_field :xpath_post_title, value: @feed.xpath_post_title.blank? ? @feed.xpath_defaults_for("")[:post_title] : @feed.xpath_post_title-%>
+  </div>
+
+
+  <div class='field'>
+    <%= f.label :xpath_post_url, t(".xpath_post_url") -%>
+    <%= f.text_field :xpath_post_url, value: @feed.xpath_post_url.blank? ? @feed.xpath_defaults_for("")[:post_url] : @feed.xpath_post_url-%>
+  </div>
+
+
+  <div class='field'>
+    <%= f.label :xpath_post_date, t(".xpath_post_date") -%>
+    <%= f.text_field :xpath_post_date, value: @feed.xpath_post_date.blank? ? @feed.xpath_defaults_for("")[:post_date] : @feed.xpath_post_date-%>
+  </div>
+
+
+  <div class='field'>
+    <%= f.label :xpath_post_content, t(".xpath_post_content") -%>
+    <%= f.text_field :xpath_post_content, value: @feed.xpath_post_content.blank? ? @feed.xpath_defaults_for("")[:post_content] : @feed.xpath_post_content-%>
+  </div>
+
+  <% unless @feed.new_record? %>
+    <h2><%= t ".test" %> </h2>
+    <% new_items = @feed.xml_feed_items %>
+
+    <% if new_items.blank? %>
+      <p><%= t ".test_failed" %></p>
+    <% else %>
+      <table>
+        <thead>
+          <tr>
+            <th><%= t ".test_post_title" %></th>
+            <th><%= t ".test_post_url" %></th>
+            <th><%= t ".test_post_date" %></th>
+            <th><%= t ".test_blog_title" %></th>
+            <th><%= t ".test_blog_url" %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% new_items.each do |news_item| %>
+            <tr>
+              <td><%= news_item[:post_title] %></td>
+              <td><%= news_item[:post_url] %></td>
+              <td><%= news_item[:post_date] %></td>
+              <td><%= news_item[:blog_title] %></td>
+              <td><%= news_item[:blog_url] %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% end %>
+  <% end %>
 
   <%= render :partial => "/refinery/admin/form_actions",
               :locals => {
