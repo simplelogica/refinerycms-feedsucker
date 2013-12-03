@@ -62,14 +62,30 @@ module Refinery
         xpath_defaults = xpath_defaults_for(xmldoc)
         xpath = self.xpath_post_url || xpath_defaults[:post_url]
         items = REXML::XPath.match(xmldoc, xpath).map {|url| {:post_url => url.to_s}}
-        %w{post_title post_content post_date
-  blog_title blog_url}.each do |suffix|
+        %w{post_title post_content post_date}.each do |suffix|
           xpath = self.send("xpath_#{suffix}") || xpath_defaults[suffix.to_sym]
           REXML::XPath.match(xmldoc, xpath).each_with_index do |value, index|
             items[index][suffix.to_sym] = value.to_s
           end
         end
+
+        # If there's only one blog title or url then we assign it to every post
+        %w{blog_title blog_url}.each do |suffix|
+          xpath = self.send("xpath_#{suffix}") || xpath_defaults[suffix.to_sym]
+          matches = REXML::XPath.match(xmldoc, xpath)
+          if matches.length == 1
+            items.each do |item|
+              item[suffix.to_sym] = matches.first.to_s
+            end
+          else
+            matches.each_with_index do |value, index|
+              items[index][suffix.to_sym] = value.to_s
+            end
+          end
+        end
+
         items
+
       end
 
 
