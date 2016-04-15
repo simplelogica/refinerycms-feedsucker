@@ -29,6 +29,8 @@ es:
             test_post_date: Fecha
             test_blog_title: Título de blog
             test_blog_url: URL de blog
+            test_author_name: Nombre del autor
+            test_author_image: Imagen del autor
             title: Título del feed
             url: URL del feed
             xpath_blog_title: XPath para obtener el título del blog
@@ -37,6 +39,9 @@ es:
             xpath_post_date: XPath para obtener la fecha del post
             xpath_post_title: XPath para obtener el título del post
             xpath_post_url: XPath para obtener la url del post
+            xpath_author_url: XPath para obtener la url del autor del post
+            xpath_author_name: XPath para obtener el nombre del autor del post
+            xpath_author_image: XPath para obtener la imagen del autor del post
       feeds:
         show:
           other: Otros feeds

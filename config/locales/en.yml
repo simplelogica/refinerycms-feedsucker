@@ -29,6 +29,8 @@ en:
             test_post_date: Fecha
             test_blog_title: Título de blog
             test_blog_url: URL de blog
+            test_author_name: Author's name
+            test_author_image: Author's image
             title: Feed's title
             url: Feed's URL
             xpath_blog_title: XPath to retrieve blog's title
@@ -37,6 +39,9 @@ en:
             xpath_post_date: XPath to retrieve post's date
             xpath_post_title: XPath to retrieve post's title
             xpath_post_url: XPath to retrieve post's url
+            xpath_author_url: XPath to retrieve post's author url
+            xpath_author_name: XPath to retrieve post's author name
+            xpath_author_image: XPath to retrieve post's author image
       feeds:
         show:
           other: Other Feedsucker Feeds

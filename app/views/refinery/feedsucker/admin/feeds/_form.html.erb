@@ -29,40 +29,49 @@
     <%= f.check_box :delete_preview -%>
   </div>
 
-
   <div class='field'>
     <%= f.label :xpath_blog_title, t(".xpath_blog_title") -%>
     <%= f.text_field :xpath_blog_title, value: @feed.xpath_blog_title.blank? ? @feed.xpath_defaults_for("")[:blog_title] : @feed.xpath_blog_title-%>
   </div>
-
 
   <div class='field'>
     <%= f.label :xpath_blog_url, t(".xpath_blog_url") -%>
     <%= f.text_field :xpath_blog_url, value: @feed.xpath_blog_url.blank? ? @feed.xpath_defaults_for("")[:blog_title] : @feed.xpath_blog_url-%>
   </div>
 
-
   <div class='field'>
     <%= f.label :xpath_post_title, t(".xpath_post_title") -%>
     <%= f.text_field :xpath_post_title, value: @feed.xpath_post_title.blank? ? @feed.xpath_defaults_for("")[:post_title] : @feed.xpath_post_title-%>
   </div>
-
 
   <div class='field'>
     <%= f.label :xpath_post_url, t(".xpath_post_url") -%>
     <%= f.text_field :xpath_post_url, value: @feed.xpath_post_url.blank? ? @feed.xpath_defaults_for("")[:post_url] : @feed.xpath_post_url-%>
   </div>
 
-
   <div class='field'>
     <%= f.label :xpath_post_date, t(".xpath_post_date") -%>
     <%= f.text_field :xpath_post_date, value: @feed.xpath_post_date.blank? ? @feed.xpath_defaults_for("")[:post_date] : @feed.xpath_post_date-%>
   </div>
 
-
   <div class='field'>
     <%= f.label :xpath_post_content, t(".xpath_post_content") -%>
     <%= f.text_field :xpath_post_content, value: @feed.xpath_post_content.blank? ? @feed.xpath_defaults_for("")[:post_content] : @feed.xpath_post_content-%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :xpath_author_url, t(".xpath_author_url") -%>
+    <%= f.text_field :xpath_author_url, value: @feed.xpath_author_url.blank? ? @feed.xpath_defaults_for("")[:xpath_author_url] : @feed.xpath_author_url-%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :xpath_author_name, t(".xpath_author_name") -%>
+    <%= f.text_field :xpath_author_name, value: @feed.xpath_author_name.blank? ? @feed.xpath_defaults_for("")[:xpath_author_name] : @feed.xpath_author_name-%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :xpath_author_image, t(".xpath_author_image") -%>
+    <%= f.text_field :xpath_author_image, value: @feed.xpath_author_image.blank? ? @feed.xpath_defaults_for("")[:xpath_author_image] : @feed.xpath_author_image-%>
   </div>
 
   <% unless @feed.new_record? %>
@@ -72,7 +81,7 @@
     <% if new_items.blank? %>
       <p><%= t ".test_failed" %></p>
     <% else %>
-      <table>
+      <table style="width:100%;table-layout:fixed;">
         <thead>
           <tr>
             <th><%= t ".test_post_title" %></th>
@@ -80,6 +89,8 @@
             <th><%= t ".test_post_date" %></th>
             <th><%= t ".test_blog_title" %></th>
             <th><%= t ".test_blog_url" %></th>
+            <th><%= t ".test_author_name" %></th>
+            <th><%= t ".test_author_image" %></th>
           </tr>
         </thead>
         <tbody>
@@ -90,6 +101,8 @@
               <td><%= news_item[:post_date] %></td>
               <td><%= news_item[:blog_title] %></td>
               <td><%= news_item[:blog_url] %></td>
+              <td><%= news_item[:author_name] %></td>
+              <td><%= news_item[:author_image] %></td>
             </tr>
           <% end %>
         </tbody>
